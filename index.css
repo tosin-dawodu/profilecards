@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#container {
+  font-family: "Kumbh Sans", sans-serif;
+  height: 100vh;
+  min-width: 100vw;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background-color: hsl(185, 75%, 39%);
+}
+
+#top {
+  position: fixed;
+  top: -55%;
+  left: -20%;
+}
+
+#note {
+  border-radius: 20px 20px 0 0;
+}
+
+#profile_card {
+  border-radius: 20px;
+  width: 24.3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin: 0 auto 80px;
+  background-color: white;
+  z-index: 2;
+}
+
+#picture_frame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#pic {
+  border-radius: 100%;
+  border: 4px solid white;
+  margin-top: -50%;
+}
+
+#bottom {
+  position: fixed;
+  bottom: -75%;
+  right: -20%;
+}
+
+#name_age {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0;
+  margin: 25px auto;
+}
+
+#feature {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: inherit;
+  border-top: 1px solid #d3d3d3;
+}
+
+.stats {
+  justify-content: space-between;
+  margin: 0 20px;
+  align-content: center;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.number {
+  font-size: 12px;
+  font-weight: 200;
+  padding: 0;
+  margin-top: 5px;
+}
+
+#location {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+h3#age {
+  margin: 0;
+  margin-left: 18px;
+  align-content: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#name {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 450px) {
+  #top {
+    position: fixed;
+    top: -20%;
+    left: -40%;
+    bottom: 25%;
+    width: 100%;
+  }
+
+  #topper {
+    width: 100%;
+  }
+
+  #note {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+  }
+
+  #profile_card {
+    border-radius: 20px;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin: 0 auto 80px;
+    background-color: white;
+  }
+
+  #bottom {
+    position: fixed;
+    bottom: -80%;
+    right: -40%;
+    width: 100%;
+  }
+}
